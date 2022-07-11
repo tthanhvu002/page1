@@ -1,0 +1,31 @@
+*{
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+.wrapper{
+    overflow: hidden;
+    display: flex;
+}
+.container{
+    margin: 0 auto;
+}
+.text{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: calc(17/13);
+    color: #142245;
+}
+.text-b{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: calc(17/13);
+    color: #142245;
+}
+.heading{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: calc(25/18);
+    color: #142245;
+
+}
