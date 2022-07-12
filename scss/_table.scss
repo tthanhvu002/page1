@@ -1,0 +1,101 @@
+.table{
+    margin-top: 12px;
+    background-color: #fff;
+    width: 100%;
+    padding:7px 12px;
+    th{
+        text-align: left;
+        padding: 7px;
+        font-weight: 600;
+
+    }
+    td{
+        padding: 7px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .edit-btn{
+        user-select: none;
+        border-radius: 6px;
+        background-color: $primary-color;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+        span{
+            position: absolute;
+            top: 32%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .edit-menu{
+            position: absolute;
+            background-color: #fff;
+            filter: drop-shadow(4px 4px 12px rgba(20, 34, 69, 0.1));
+            padding: 8px 16px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            gap: 10px;
+            top: 22px;
+            z-index: 99;
+            left: -106px;
+            width: 125px;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+            .edit-item{
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+            &.active{
+                max-height: 125px;
+
+                opacity: 1;
+            }
+        }
+        
+    }
+    &-pagination{
+        display: flex;
+        align-items: center;
+        padding: 6px 12px;
+        background-color: #fff;
+        padding-left: 20px;
+        justify-content: space-between;
+        p{
+
+        }
+        .slider{
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            .number{
+                color: $blue-color;
+                font-weight: bold;
+                border-radius: 4px;
+                background-color: $primary-color;
+            }
+            .next, .prev, .number{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 32px;
+                height: 32px;
+                cursor: pointer;
+
+            }
+            .next, .prev{
+                
+            }
+            .next{
+                img{
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+}
