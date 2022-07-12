@@ -1,0 +1,70 @@
+.top-section{
+    display: flex;
+    gap: 25px;
+    .item{
+        margin-top: 20px;
+        align-items: center;
+        justify-content: space-between;
+        display: flex;
+        width: 165px;
+        height: 92px;
+        border-radius: 4px;
+        background-color: #fff;
+        padding: 0 14px;
+        padding-right: 0;
+        overflow: hidden;
+
+        &.map{
+            background-color: $blue-color;
+            p{
+                color: #fff;
+            }
+        }
+
+        p{
+            font-size: 16px;
+            color: $dark-blue;
+            font-weight: 700;
+        }
+
+        &-img{
+            width: 100%;
+        }
+
+        &-team, &-video, &-vbox, &-buy, &-map, &-people{
+            display: flex;
+            background-size: contain;
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            flex: 1;
+            height: 105px;
+            background-size: 105px 105px;
+            background-position: -10px center;
+            img{
+            }
+        }
+        &-team{
+            background-image: url(../img/team-bg.svg);
+
+        }
+        &-video{
+            background-image: url(../img/video-bg.svg);
+        }
+        &-vbox{
+            background-image: url(../img/vbox-bg.svg);
+            background-size: 128px 105px;
+        }
+        &-buy{
+            background-image: url(../img/buy-bg.svg);
+        }
+        &-map{
+            background-image: url(../img/emap-bg.svg);
+        }
+        &-people{
+            background-image: url(../img/people-bg.svg);
+            background-position: -20px center;
+        }
+    }
+}

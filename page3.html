@@ -65,6 +65,8 @@
             <a href="#" class="menu-link">
                 <img src="./img/ic8.svg" alt="">
             </a>
+            <div class="line-active"></div>
+
           </li>
           <li class="menu-item">
             <a href="#" class="menu-link">
@@ -206,14 +208,21 @@
                 <img src="./img/trash.svg" alt="">
               </div>
             </div>
-            <div class="up">
-              <img src="./img/chevron-up.svg" alt="">
-            </div>
+          </div>
+          <div class="up">
+            <img src="./img/chevron-up.svg" alt="">
           </div>
         </div>
       </div>
     </div>
     </div>
+    <script>
+      document.querySelector('.camera-list-wrap .up').onclick = () => {
+        document.querySelector('.camera-list-wrap').classList.toggle('hide')
+        document.querySelector('.camera-list-wrap .up img').style.transform = 'rotate(180deg)'
+      }
+      
+    </script>
     <script src="./js/submenu.js"></script>
     <script src="./js/sidebar.js"></script>
 </body>

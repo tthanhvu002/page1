@@ -83,11 +83,20 @@ p {
   color: #142245;
 }
 
+.right-section {
+  padding-top: 20px;
+  width: 100%;
+  padding-right: 25px;
+  padding-left: 32px;
+  background-color: #fafafa;
+}
+
 .sidebar {
   width: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-shadow: 3px 0px 7px rgba(20, 34, 69, 0.07);
   padding-bottom: 36px;
   background-color: #fff;
   border-right: 1px solid #f1f1f4;
@@ -294,7 +303,8 @@ p {
   margin-left: 12px;
 }
 .map-section-wrap .camera-list-wrap {
-  position: relative;
+  max-height: 400px;
+  transition: 0.2s ease;
   position: absolute;
   top: 21px;
   right: 16px;
@@ -306,7 +316,15 @@ p {
   flex-direction: column;
   width: 303px;
 }
+.map-section-wrap .camera-list-wrap.hide {
+  max-height: 53px;
+}
+.map-section-wrap .camera-list-wrap.hide .input-wrap, .map-section-wrap .camera-list-wrap.hide .tabs, .map-section-wrap .camera-list-wrap.hide .camera-list {
+  opacity: 0;
+}
 .map-section-wrap .camera-list-wrap-heading {
+  font-weight: 600;
+  color: #374FA2;
   margin: 0 auto;
   display: flex;
   width: 100%;
@@ -385,8 +403,73 @@ p {
   cursor: pointer;
   border-radius: 100%;
   box-shadow: 0px 4px 24px rgba(75, 75, 75, 0.1);
+  z-index: 99;
   left: 50%;
   transform: translate(-50%, 50%);
+}
+
+.top-section {
+  display: flex;
+  gap: 25px;
+}
+.top-section .item {
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  width: 165px;
+  height: 92px;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 0 14px;
+  padding-right: 0;
+  overflow: hidden;
+}
+.top-section .item.map {
+  background-color: #374FA2;
+}
+.top-section .item.map p {
+  color: #fff;
+}
+.top-section .item p {
+  font-size: 16px;
+  color: #142245;
+  font-weight: 700;
+}
+.top-section .item-img {
+  width: 100%;
+}
+.top-section .item-team, .top-section .item-video, .top-section .item-vbox, .top-section .item-buy, .top-section .item-map, .top-section .item-people {
+  display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+  height: 105px;
+  background-size: 105px 105px;
+  background-position: -10px center;
+}
+.top-section .item-team {
+  background-image: url(../img/team-bg.svg);
+}
+.top-section .item-video {
+  background-image: url(../img/video-bg.svg);
+}
+.top-section .item-vbox {
+  background-image: url(../img/vbox-bg.svg);
+  background-size: 128px 105px;
+}
+.top-section .item-buy {
+  background-image: url(../img/buy-bg.svg);
+}
+.top-section .item-map {
+  background-image: url(../img/emap-bg.svg);
+}
+.top-section .item-people {
+  background-image: url(../img/people-bg.svg);
+  background-position: -20px center;
 }
 
 /*# sourceMappingURL=app.css.map */
