@@ -249,6 +249,16 @@ p {
   background-repeat: no-repeat;
   position: relative;
 }
+.map-section-wrap .online-wrap {
+  position: absolute;
+  top: 20%;
+  right: 30%;
+  display: flex;
+  gap: 20px;
+}
+.map-section-wrap .online-wrap img {
+  margin: 20px;
+}
 .map-section-wrap .map-direct {
   position: absolute;
   top: 16px;
